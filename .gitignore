@@ -1,0 +1,16 @@
+# .NET
+**/bin/
+**/obj/
+
+# Angular
+**/node_modules/
+**/.angular/
+**/public/
+
+# IDEs
+.vs/
+.vscode/
+.idea/
+
+# Logs
+*.log
