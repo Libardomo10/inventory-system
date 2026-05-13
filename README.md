@@ -1,7 +1,20 @@
+## Descarga repositorio Git
+Debe seguir los siguientes pasos para clonar el repositorio y ejecutar en local:
+```bash
+git clone https://github.com/Libardomo10/inventory-system.git
+cd inventory-system
+```
+
 ## Backend
 Se debe realizar la descarga completa del repositorio y ejecutar el Query
 que se encuentra en la base de este repositorio con nombre QueryDataBase.sql
 la cual tiene creación de la base de datos, tabla e inserción de datos.
+
+```bash
+cd backend/Inventory.API
+dotnet restore
+dotnet run
+```
 
 ## Frontend
 Para el proyecto frontend debe ubicarse en el proyecto inventory-ui por terminal
@@ -9,8 +22,8 @@ Para el proyecto frontend debe ubicarse en el proyecto inventory-ui por terminal
 
 ```bash
 cd inventory-system/frontend/inventory-ui
-
-npm install 
+npm install
+npm start 
 ```
 
 ## Versiones
