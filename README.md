@@ -11,7 +11,7 @@ Para el proyecto frontend debe ubicarse en el proyecto inventory-ui por terminal
 cd inventory-system/frontend/inventory-ui
 
 npm install 
-```bash
+```
 
 ## Versiones
 El proyecto esta en las siguientes versiones.
