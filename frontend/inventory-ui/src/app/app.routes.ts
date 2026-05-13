@@ -17,6 +17,11 @@ export const routes: Routes = [
         loadComponent: () => import('./features/inventory/pages/inventory/inventory').then(m => m.Inventory),
     },
     {
+        path: 'movements',
+        canActivate: [authGuard],
+        loadComponent: () => import('./features/inventory/pages/movements/movements').then(m => m.Movements),
+    },
+    {
         path: '**',
         redirectTo: 'login'
     }

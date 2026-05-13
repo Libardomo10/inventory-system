@@ -11,11 +11,17 @@ import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { httpAuthInterceptor } from './core/interceptors/http-auth-interceptor';
 import { provideToastr } from 'ngx-toastr';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { loadingInterceptor } from './core/interceptors/loading-interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideHttpClient(withInterceptors([httpAuthInterceptor])),
+    provideHttpClient(withInterceptors(
+      [
+        loadingInterceptor,
+        httpAuthInterceptor
+      ]
+    )),
     provideZonelessChangeDetection(),
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
