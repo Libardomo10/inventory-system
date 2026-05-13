@@ -32,7 +32,7 @@ namespace Inventory.Api.Controllers
             return Ok(productsResponse);
         }
 
-        [HttpPost("productos/movimiento")]
+        [HttpPost("movimiento")]
         [SwaggerOperation(
         Summary = "Registra el movimiento de los productos (Entradas/Salidas).",
         Description = "Retorna un listado generico con el resultado de la operación")]
