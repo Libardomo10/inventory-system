@@ -1,0 +1,38 @@
+<table class="table align-middle mb-0">
+    <thead class="table-light">
+        <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th class="text-center">
+                Acciones
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @for (
+        product of products;
+        track product.id
+        ) {
+        <tr>
+            <td>
+                {{ product.id }}
+            </td>
+            <td class="fw-semibold">
+                {{ product.name }}
+            </td>
+            <td>
+                <span class="badge rounded-pill" [class]="getQuantityClass(product.quantity)">
+                    {{ product.quantity }}
+                </span>
+            </td>
+            <td class="text-center">
+                <button class="btn btn-outline-dark" (click)="goToMovement(product)">
+                    Agregar Movimiento
+                </button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

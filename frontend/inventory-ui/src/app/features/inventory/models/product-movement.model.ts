@@ -1,5 +1,7 @@
+import { MovementType } from "../../../core/enums/movement-type";
+
 export interface ProductMovement {
   productId: number;
-  type: string;
+  type: MovementType;
   quantity: number;
 }

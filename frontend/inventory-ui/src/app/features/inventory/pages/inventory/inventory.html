@@ -1,0 +1,30 @@
+<div class="container py-5">
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold mb-1">
+                Inventario
+            </h2>
+
+            <p class="text-muted mb-0">
+                Gestiona tus productos y movimientos.
+            </p>
+        </div>
+        
+        <button class="btn btn-outline-danger" (click)="logout()">
+            Cerrar Sesión
+        </button>
+    </div>
+
+    <!-- Card -->
+    <div class="card border-0 shadow-sm inventory-card">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+
+                <app-table [products]="products"></app-table>
+
+            </div>
+        </div>
+    </div>
+</div>
