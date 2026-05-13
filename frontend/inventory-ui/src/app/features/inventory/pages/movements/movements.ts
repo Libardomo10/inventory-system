@@ -39,7 +39,7 @@ export class Movements implements OnInit {
   }
 
   decrease(): void {
-    if (this.product.quantity <= Number(this.quantity)) {
+    if (this.product.quantity < Number(this.quantity)) {
       this.toastr.error(
         'No se puede registrar una salida con una cantidad mayor a la disponible en el inventario.',
       );
