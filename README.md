@@ -1,11 +1,21 @@
+## Backend
 Se debe realizar la descarga completa del repositorio y ejecutar el Query
 que se encuentra en la base de este repositorio con nombre QueryDataBase.sql
 la cual tiene creación de la base de datos, tabla e inserción de datos.
 
+## Frontend
 Para el proyecto frontend debe ubicarse en el proyecto inventory-ui por terminal
-(preferiblemente git bash) y ejecutar "cd inventory-system/frontend/inventory-ui", luego
-debe ingresar el comando de "npm install", el proyecto esta en las siguientes versiones.
+(preferiblemente git bash) y ejecutar los siguientes comandos:
 
+```bash
+cd inventory-system/frontend/inventory-ui
+
+npm install 
+```bash
+
+## Versiones
+El proyecto esta en las siguientes versiones.
+.Net: 9
 Angular CLI: 20.3.25
 Node: 20.20.0
 
