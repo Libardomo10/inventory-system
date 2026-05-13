@@ -1,0 +1,43 @@
+.login-banner {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1974&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-card {
+    max-width: 420px;
+    padding: 2.5rem;
+}
+
+.custom-input {
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid #dcdcdc;
+}
+
+.custom-input:focus {
+    box-shadow: none;
+    border-color: #212529;
+}
+
+.custom-btn {
+    height: 48px;
+    border-radius: 12px;
+    font-weight: 600;
+}
